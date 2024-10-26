@@ -26,18 +26,15 @@ Introducing the Ouija Board Web Game—a completely safe (and silly) portal to t
 For Software:
 - Languages Used--HTML,CSS,JS
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+no needed
 
 # Run
-[commands]
+visit the website
+https://ouija-board-omega.vercel.app/
 
 ### Project Documentation
 For Software:
