@@ -24,10 +24,7 @@ Introducing the Ouija Board Web Game—a completely safe (and silly) portal to t
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- Languages Used
-  HTML
-  CSS
-  JS
+- Languages Used--HTML,CSS,JS
 For Hardware:
 - [List main components]
 - [List specifications]
