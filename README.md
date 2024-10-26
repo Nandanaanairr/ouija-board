@@ -40,14 +40,13 @@ https://ouija-board-omega.vercel.app/
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot 2024-10-26 091642](https://github.com/user-attachments/assets/0c3335bb-8594-4e87-a6f6-282066898ab0)   game page where u can see ouija board
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot 2024-10-26 092244](https://github.com/user-attachments/assets/8b2fdc93-521b-4be5-aeea-137d015eb208)
+ qn box where user can ask funny questions
+ 
+![Screenshot 2024-10-26 092456](https://github.com/user-attachments/assets/432aba5e-60c0-4d69-b00e-fbfcd486997f)
+the spirit reply to your qns
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
