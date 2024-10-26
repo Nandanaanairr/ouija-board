@@ -4,31 +4,30 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Luttapi
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Sundara Siva Sreerag - College of Engineering Perumon
+- Member 2: Nadana A Nair - College of Engineering Perumon
+- Member 3: Nandu S Kumar - College of Engineering Perumon
 
 ### Project Description
-[2-3 lines about what your project does]
+The Ouija Board Web Game is an interactive, spooky-fun experience where users can ask questions and receive playful, ghostly responses. It combines traditional Ouija board mystique with lighthearted, funny replies, making it both eerie and entertaining!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People are struggling to communicate with the spirit world in a safe, non-terrifying, and mildly ridiculous way. They need ghostly guidance without the inconvenience of actual supernatural encounters (or taking it too seriously!).
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Introducing the Ouija Board Web Game—a completely safe (and silly) portal to the other side! Now, users can consult a “spirit” that’s as sarcastic as it is spooky, giving answers that range from wisecracks to half-hearted predictions. Whether you need advice on lunch or the meaning of life, this playful ghostly chatbot has you covered... sort of.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
+- Languages Used
+  HTML
+  CSS
+  JS
 For Hardware:
 - [List main components]
 - [List specifications]
@@ -87,9 +86,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Nandu S Kumar: HTML,css and assests.
+- Nandana A Nair: HTML,CSS assests
+- Sundara Siva Sreerag: JS
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
