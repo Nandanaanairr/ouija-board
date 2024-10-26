@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouija Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ouija-board">
+        <div class="coin"></div>
+        <div class="response">
+            <p id="response-text">Ask a question and press "Ask".</p>
+        </div>
+        <input type="text" id="question" placeholder="Ask a question...">
+        <button onclick="askQuestion()">Ask</button>
+    </div>
+    <audio  loop autoplay>
+        <source src="horror-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
