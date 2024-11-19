@@ -10,7 +10,18 @@ function askQuestion() {
 
     responseText.innerText = "The spirits are thinking...";
 
-    // Move the coin in a random pattern around the board
+const audioElement = document.getElementById("audio");
+
+audioElement.addEventListener('canplaythrough', function() {
+  
+    const fallbackMessage = document.querySelector('audio').textContent;
+    if (fallbackMessage) {
+        
+        const fallbackText = document.querySelector('audio').nextElementSibling;
+        if (fallbackText) fallbackText.style.display = 'none';
+    }
+});
+
     let steps = 20;
     let currentStep = 0;
     let interval = setInterval(() => {
@@ -32,7 +43,6 @@ function askQuestion() {
 function generateResponse(question) {
     const responseText = document.getElementById('response-text');
 
-    // Generate a basic humanoid-like response
     const responses = [
         "Yes, it is certain.",
         "No, it is not meant to be.",
