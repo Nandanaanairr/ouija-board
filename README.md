@@ -47,7 +47,8 @@ For Software:
  
 ![Screenshot 2024-10-26 092456](https://github.com/user-attachments/assets/432aba5e-60c0-4d69-b00e-fbfcd486997f)
 the spirit reply to your qns
- the screenshots are differ from the website as they have been updated little bit
+ 
+the screenshots are differ from the website as they have been updated little bit
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
