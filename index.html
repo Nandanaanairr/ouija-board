@@ -15,11 +15,36 @@
         <input type="text" id="question" placeholder="Ask a question...">
         <button onclick="askQuestion()">Ask</button>
     </div>
-    <audio  loop autoplay>
+    <div id="orientation-warning" class="orientation-warning">
+        <p>Please rotate your phone to landscape mode.</p>
+        <button onclick="closeWarning()">OK</button>
+    </div>
+    
+    <audio  loop autoplay></audio>
         <source src="horror-song.mp3" type="audio/mpeg">
+        <source src="horror-song.ogg" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
     <script src="script.js"></script>
 </body>
 </html>
 
+<script>
+    function checkOrientation() {
+        const warning = document.getElementById("orientation-warning");
+
+        if (window.innerHeight > window.innerWidth && /Mobi|Android/i.test(navigator.userAgent)) {
+            warning.style.display = "flex"; 
+        } else {
+            warning.style.display = "none"; 
+        }
+    }
+    
+    function closeWarning() {
+        const warning = document.getElementById("orientation-warning");
+        warning.style.display = "none"; 
+    }
+
+    window.addEventListener("load", checkOrientation);
+    window.addEventListener("resize", checkOrientation);
+    </script>
