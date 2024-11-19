@@ -1,12 +1,14 @@
+/* General styles */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #282c34;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1b1b1d, #3c0d0d); 
+    color: #ffdddd; 
+    font-family: 'Creepster', cursive; 
     margin: 0;
+    overflow: auto;
 }
 
 .ouija-board {
@@ -15,43 +17,189 @@ body {
     align-items: center;
     background: url('ouija-board-4973914_1280.jpg') no-repeat center center;
     background-size: cover;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 60px rgba(139, 0, 0, 0.8), inset 0 0 30px rgba(255, 0, 0, 0.3);
     text-align: center;
-    width: 1200px;
-    height: 600px;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    max-height: 600px;
+    position: relative;
+    border: 2px solid rgba(255, 0, 0, 0.5); 
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .coin {
     width: 100px;
     height: 100px;
-    background: url('file.png') no-repeat center center;
-    background-size: cover;
-    border-radius: 100%;
-    position: relative;
+    background: url('filee.png') no-repeat center center;
+    background-size: cover; 
+    border-radius: 50%;
+    position: absolute;
     top: 0;
-    transition:  right 0.3s ease,top 0.3s ease, left 0.6s ease ;
+    transition: top 0.3s ease, left 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
 }
 
 .response {
-    margin-bottom:250px;
+    margin-bottom: 250px; 
 }
 
+.response p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7e0808dc /* Bright bloody red */
+    text-shadow: 2px 2px 15px rgba(219, 3, 3, 0.87), 0 0 10px rgba(208, 2, 2, 0.3); 
+    animation: pulse-text 2s infinite;
+}
+
+@keyframes pulse-text {
+    0%, 100% {
+        text-shadow: 2px 2px 15px rgba(255, 0, 0, 0.9);
+    }
+    50% {
+        text-shadow: 4px 4px 20px rgba(255, 0, 0, 1);
+    }
+}
+
+
 input[type="text"] {
-    padding: 5px;
-    margin-bottom: 160px;
+    padding: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #3c0d0d, #4a1e1e); 
+    color: #ffffff; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3), inset 0 0 10px rgba(255, 0, 0, 0.5); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8); 
+}
+
+input[type="text"]::placeholder {
+    color: #ffaaaa; 
+    opacity: 0.8;
+    font-weight: normal;
 }
 
 button {
-    margin-top: px;
-    padding: 5px 10px;
-    background: #b1abab;
+    margin-top: 20px; 
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #5a1b1b, #7c2626); 
     border: none;
-    color: white;
+    border-radius: 10px;
+    color: #ffffff; 
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); 
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-    background: #aaa;
+    background: linear-gradient(135deg, #7c2626, #5a1b1b);
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); 
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.9); 
+}
+
+.orientation-warning {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); 
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.orientation-warning p {
+    background: rgba(255, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+@media (max-width: 768px) {
+    .ouija-board {
+        height: auto;
+    }
+
+    .coin {
+        width: 80px;
+        height: 80px;
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .response p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ouija-board {
+        height: auto;
+        padding: 10px;
+    }
+
+    .coin {
+        width: 70px;
+        height: 70px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .response p {
+        font-size: 1.2rem;
+    }
 }
